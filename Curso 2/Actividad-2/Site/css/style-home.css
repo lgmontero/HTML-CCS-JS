@@ -1,0 +1,174 @@
+
+body{margin: 0px;
+}
+/* Header */
+.logo{
+  width:auto;
+  margin-left: 10px;
+  margin-top: 28px;
+  float:left;
+  position: relative;
+}
+.button:active {
+  /* box-shadow: 0 12px 16px 0 rgba(250, 248, 248, 0.24),0 17px 50px 0 rgba(248, 245, 245, 0.19); */
+  transform: translateY(15px);
+}
+.grad {
+background-image: linear-gradient(rgb(26, 28, 31), rgba(25, 34, 65, 0.973), rgba(32, 58, 104, 0.959));
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgb(0, 0, 0);
+width: 100%;
+height: auto;
+position: fixed ;
+
+}
+/* NOmbre de la Empresa */
+  .grad div h1{
+  float:left;
+  margin-top:30px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .grad nav {
+  background-color:none;
+  list-style-type:none;
+  display: inline-block;
+  position:relative;
+  margin: 10px;
+  padding: 15px;
+  width: 30%;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  }
+  .grad nav li a {
+  display:inline-block;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: 5px;
+  }
+   .grad nav li a.active {
+  background-color: #4CAF50;
+    color: white;
+  }
+  .grad nav #lis a:hover:not(.active) {
+  /* background-color: rgba(3, 224, 51, 0.719);
+  color: rgb(17, 8, 8); */
+  box-shadow: 0 6px 0  rgb(3, 224, 51);
+  color: rgb(255, 255, 255);
+  
+  }
+  .grad nav #lis2  a:hover:not(.active) {
+  /* background-color: rgba(224, 209, 3, 0.801);
+  color: rgb(17, 8, 8); */
+  box-shadow: 0 6px 0  rgb(213, 226, 36);
+  color: rgb(255, 255, 255);
+  }
+  .grad nav #lis3  a:hover:not(.active) {
+    /* background-color: rgba(3, 172, 224, 0.719);
+    color: rgb(17, 8, 8); */
+    box-shadow: 0 6px 0  rgb(17, 171, 209);
+  color: rgb(255, 255, 255);
+  }
+  .grad nav #lis4  a:hover:not(.active) {
+  /* background-color: rgba(233, 200, 13, 0.719);
+  color: rgb(17, 8, 8); */
+  box-shadow: 0 6px 0  rgb(209, 20, 67);
+  color: rgb(255, 255, 255);
+  }
+  .grad nav li a {
+    float:right;
+    padding: 15px;
+  }
+  /* Main */
+
+.contenido-home{
+  
+ width:auto;
+ height: auto;
+ padding: 5px 0 150px !important;
+
+ }
+#ubic{
+ padding: 150px;
+ margin-left: 250px;
+ padding-inline-start: 350px!important;
+ padding-inline-end: 200px  !important;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important;
+ color: lightslategrey;
+}
+  .contenido-home img{
+    width: auto;
+    height: auto;
+    padding: 133.03px 0 100px;
+    float: left;
+    margin: auto !important;   
+  }
+
+.sec{
+   margin: auto!important; 
+   clear: both;
+       
+}
+ 
+.sec  td{
+ padding-inline-start: 18px !important;
+ padding-left: 10px !important;
+ padding-right: 10px !important;
+}
+
+
+
+
+/* footer */
+
+.grad2{
+  background-image: linear-gradient(rgba(48, 81, 139, 0.959), rgba(37, 44, 70, 0.973), rgb(32, 37, 46));
+  box-shadow: 0 -6px 12px 0 rgb(0, 0, 0), 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:100%;
+  height: auto;
+  padding-bottom: 0.30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  bottom: 0px;
+  position: relative;
+  position: fixed;
+  
+}
+
+.grad2 img{
+  width: auto;
+  float: right;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 30px; 
+}
+
+/* Copyright */
+
+#deco:hover {
+  color: tomato !important;
+  text-decoration-color: tomato!important;
+  
+  }
+.link a:not(.active) {
+  text-decoration-line: none;  
+  color:whitesmoke!important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important;
+  
+}
+
+
+.copy {
+  text-align: center!important;
+  color: whitesmoke!important;
+  box-sizing: content-box !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif!important;
+}
+ 
+.copy h1{
+  font-size: 15px !important;
+  padding-top: 20px;
+}
