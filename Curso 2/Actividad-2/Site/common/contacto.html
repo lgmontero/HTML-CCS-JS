@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -6,7 +7,10 @@
     <title>Curso 2</title>
     <link rel="icon" href="../img/ico/html532.ico">
     <link rel="stylesheet" href="../css/style-contact.css" type="text/css">
-    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/style-form.css" type="text/css">
+    <!-- CSS boostrap -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -25,10 +29,10 @@
         <!-- Nav -->
 
         <nav>
-            <li id="lis"><a class="active" href="#">Contacto</a> </li>
-            <li id="lis2"><a href="soporte.html">Soporte</a></li>
-            <li id="lis3"><a href="servicios.html">Servicios</a></li>
-            <li id="lis4"><a href="soluciones.html">Soluciones</a></li>
+            <li id="lis0"><a class="active" href="#">Contacto</a> </li>
+            <li id="lis1"><a href="soporte.html">Soporte</a></li>
+            <li id="lis2"><a href="servicios.html">Servicios</a></li>
+            <li id="lis3"><a href="soluciones.html">Soluciones</a></li>
         </nav>
 
     </header>
@@ -37,62 +41,219 @@
 
     <main>
 
-        <div>
-            <img src="../img/contacto/main-one.png" class="mod-image" alt="Contacto">
+        <section>
+            <div>
+                <img src="../img/contacto/main-one.png" class="mod-image" alt="Contacto">
 
-        </div>
-        <div>
-            <p>
-            <h1 class="mod-text">
-                Nuestros  CANALES
-            </h1>
-            </p>
-        </div>
+            </div>
+
+            <div>
+                <p>
+                <h1 class="mod-text">Nuestros CANALES</h1>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="seccont">
+                <h1>Contáctese con nosotros...</h1>
+            </div>
+        </section>
+
+        <section class="contact">
+
+
+
+            <form action="" class="formulario" id="formulario">
+
+
+
+                <!-- Grupo: Nombre -->
+
+
+                <div class="formulario__grupo" id="grupo__nombre">
+                    <label for="nombre" class="formulario__label"><b>Nombre</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre"
+                            placeholder="Apelido y Nombre">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Minimo de dígitos 5, puede utilizar espacion acentos y letras..
+                    </p>
+                </div>
+
+                <!-- Grupo: Empresa -->
+
+                <div class="formulario__grupo" id="grupo__empresa">
+                    <label for="empresa" class="formulario__label"><b>Empresa</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="empresa" id="empresa"
+                            placeholder="Nombre de la Compañia">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Minimo de dígitos 5, puede utilizar espacion acentos y letras.
+                    </p>
+                </div>
+
+                <!-- Grupo: Correo Electronico -->
+
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label"><b>Dirección de e-mail</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo"
+                            placeholder="e-mail@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Puede utilizar letras, numeros, puntos, guiones y
+                        guion bajo.</p>
+                </div>
+
+                <!-- Grupo: Sector -->
+
+
+                <div class="formulario__grupo" id="grupo__area">
+                    <label for="area" class="formulario__label"><b> Area</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="area" class="formulario__input" name="area" id="area"
+                            placeholder="Finanzas, Telecomunicaciones, Comercial">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Minimo de dígitos 5, puede utilizar espacion acentos y letras..
+                    </p>
+                </div>
+
+                <!-- Grupo: Ubicación -->
+
+
+                <div class="formulario__grupo" id="grupo__lugar">
+                    <label for="lugar" class="formulario__label"><b> Ubicación</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="lugar" id="lugar"
+                            placeholder="Brasil, San Pablo">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">Minimo de dígitos 5, puede utilizar espacion acentos y letras.
+                    </p>
+                </div>
+
+
+                <!-- Grupo: Teléfono -->
+
+
+                <div class="formulario__grupo" id="grupo__telefono">
+                    <label for="telefono" class="formulario__label"><b>Teléfono</b></label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono"
+                            placeholder="0380 + Teléfono">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14
+                        dígitos.
+                    </p>
+                </div>
+
+                <!-- Grupo: Suscripción -->
+
+
+                <div class="formulario__grupo" id="grupo__info">
+                    <label class="formulario__label">
+                        <input class="formulario__checkbox" type="checkbox" name="info" id="info">
+                        <b> Deseas recibir nuestras News!</b>
+                    </label>
+                </div>
+
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Tus datos se enviaron
+                        Exitosamente,a la brevedad nos contactaremos!</p>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario
+                        correctamente. </p>
+                </div>
+            </form>
+        </section>
+
+        <section class="contenido-home">
+            <div>
+                <p>
+                    HigthTech CORP. nace en 2021 basada en el compromiso con el cliente con el objetivo de crear
+                    aplicaciones y soluciones para la red emergente de
+                    Nueva Generación. Basado en un grupo con antecedentes en telefonía IP desde 1995, Servicios de
+                    datos, Telefonia Movil, convencional.
+                    HigthTech Technology es líder regional en Comunicaciones Unificadas. Diseña y desarrolla la
+                    tecnología esencial para asegurar y optimizar las
+                    comunicaciones sobre Internet y su entorno Cloud. Su estructura está conformada por oficinas en
+                    Estados Unidos, Argentina y Chile, y una amplia
+                    red de distribuidores oficiales que comercializan sus productos en toda América. Sus soluciones
+                    también tienen presencia en Europa, África y Asia.
+
+                </p>
+            </div>
+           
+        </section>
+
+
     </main>
 
-
-
     <!-- Footer -->
+
     <footer class="grad2">
-        <aside>
-            <div>
-
-                <table class="media">
-                    <tr>
-
-                        <p><a href="https://www.instagram.com/" target="_blank"><img src="../img/is.png"
-                                    alt="instagram"></a></p>
+        <section>
 
 
-                        <p><a href="https://facebook.com/" target="_blank"><img src="../img/fb.png" alt="facebook"></a></p>
+            <aside>
+                <div>
+
+                    <table class="media">
+
+                        <tr>
+
+                            <p><a href="https://www.instagram.com/" target="_blank"><img src="../img/is.png"
+                                        alt="instagram"></a></p>
 
 
-                        <p><a href="https://twitter.com/" target="_blank"><img src="../img/tw.png" alt="twiter"></a></p>
+                            <p><a href="https://facebook.com/" target="_blank"><img src="../img/fb.png"
+                                        alt="facebook"></a>
+                            </p>
 
-                    </tr>
-                </table>
-            </div>
-        </aside>
-        <!-- Copyright -->
-        <article>
-            <div class="copy link ">
-                <p>
-                <h1>&copy; Curso 2 - All rights reserved - Design:
-                    <a id="deco" href="https://github.com/lgmontero?tab=repositories" target="_blank">Luciano
-                        Montero</a>
-                </h1>
-                </p>
 
-            </div>
+                            <p><a href="https://twitter.com/" target="_blank"><img src="../img/tw.png" alt="twiter"></a>
+                            </p>
 
-        </article>
+                        </tr>
+
+                    </table>
+                </div>
+            </aside>
+            <!-- Copyright -->
+            <article>
+                <div class="copy link ">
+                    <p>
+                    <h1>&copy; Curso 2 - All rights reserved - Design:
+                        <a href="https://github.com/lgmontero" target="_blank">Luciano
+                            Montero</a>
+                    </h1>
+                    </p>
+
+                </div>
+
+            </article>
 
 
     </footer>
+
     <!-- JavaScript Bundle with Popper -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+    <script src="../js/form-contac.js"></script>
 
 </body>
 
